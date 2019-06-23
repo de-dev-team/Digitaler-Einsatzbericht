@@ -1,6 +1,5 @@
 dist: bionic
 language: csharp
+solution: Digitaler Einsatzbericht.sln
 mono: none
-dotnet: 2.2.107
-script:
- - dotnet restore
+dotnet: 2.2.105
