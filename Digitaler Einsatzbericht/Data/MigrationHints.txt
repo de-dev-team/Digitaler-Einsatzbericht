@@ -1,0 +1,5 @@
+﻿https://www.learnentityframeworkcore.com/migrations
+
+dotnet ef migrations add <migrationName>
+add-migration <migrationName>
+dotnet ef database update
