@@ -3,3 +3,10 @@ language: csharp
 solution: Digitaler Einsatzbericht.sln
 mono: none
 dotnet: 2.2.105
+stages:
+  - build
+jobs:
+  include:
+    - stage: build
+      name: build solution
+      script: dotnet restore && dotnet build
