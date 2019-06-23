@@ -1,15 +1,8 @@
-os:
-  - linux
-  - windows
 language: csharp
 solution: Digitaler Einsatzbericht.sln
 dist: bionic
 mono: none
 dotnet: 2.2.105
-matrix:
-    allow_failures:
-        - linux: linux
-          windows: windows
 stages:
   - build
 jobs:
