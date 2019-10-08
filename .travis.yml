@@ -11,4 +11,4 @@ jobs:
       name: build solution
       script: dotnet restore && dotnet build
 after_success:
-- curl --ftp-create-dirs -T filename ftp://${SFTP_USER}:${SFTP_PASSWORD}@137.117.160.145/var/www/filename
+- curl --ftp-create-dirs -T /home/travis/build/de-dev-team/Digitaler-Einsatzbericht/Digitaler Einsatzbericht/bin/Debug/netcoreapp2.2/ ftp://${SFTP_USER}:${SFTP_PASSWORD}@137.117.160.145/var/www/de
